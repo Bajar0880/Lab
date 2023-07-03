@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+    <style>
+        html {
+        height: 100%;
+         }
+        body {
+        height: 100%;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <main id="main-holder">
+        <h1 id="login-header">Login</h1>
+        
+        <div id="login-error-msg-holder">
+          <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+        </div>
+        
+        <form id="login-form">
+          <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+          <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+          <input type="submit" value="Login" id="login-form-submit"><br>
+         <span> You don't have account?</span><a href="signp.html">Sign up</a>
+        </form>
+      
+      </main>
+    <script src="index.js"></script>
+</body>
+</html>

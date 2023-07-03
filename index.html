@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width">
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Oswald:wght@200&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header class="navigation">
+        
+        <nav class="navbar">
+            <h2><a href="#Home">LAB iT</a></h2>
+            <div class="inner_navbar">
+
+                <ul>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <!-- <li><a href="#">Contact</a></li> -->
+                    <li><a href="login.html">Account</a></li>
+                    
+                </ul>
+                <div class="signIn">
+                    <div class="cart">
+                        <a href="cart.html"><img src="images/shopping-bag-2-fill.svg"></a>
+                    </div>
+                    <div class="user-profile">
+                        <a href="login.html" ><img src="images/user-fill.svg"></a>
+                    </div>
+                </div>
+                
+                <div class="burger" onclick="showMenu()">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+  <div class="backdrop" onclick="closeMenu()"></div>
+  <div class="mobile-menu">
+    <ul onclick="closeMenu()">
+      <li><a href="products.html">Products</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <!-- <li><a href="login.html">Account</a></li> -->
+    </ul>
+  </div>
+
+       <div class="container" id="Home">
+            <div class="inner_wrapper">
+                <div class="header-title-container">
+                    <h1>Experience the best quality of our equipments</h1>
+                    <hr>
+                    <p>Kaya mang borrow na kayo sa'min! mga beshy ko</p>
+
+                <button class="primary-btn" onclick="window.location.href='#categories'">Explore Now!</button>
+                </div>
+
+                <div class="second-child">
+                    <img src="images/front-image-removebg.png" alt="background images">
+                </div>
+            </div>
+        </div>
+            
+        <div class="space-1"></div>
+
+            <!--FEATURED EQUIPMENTS-->
+
+            <div class="categories" id="categories">
+                <div class="row">
+               
+                 <div class="col-3">
+                    <img src="images/sample_keyboard.png" alt="keyboard">
+                 </div>
+        
+                 <div class="col-3">
+                    <img src="images/sample_mouse.webp" alt="mouse">
+                 </div>
+        
+                <div class="col-3">
+                    <img src="images/front-image-removebg.png" alt="laptop">
+                 </div>
+                </div>
+            </div>
+    
+                <div class="space-1"></div>
+            <!--FEATURED PRODUCTS-->
+
+            <div class="main-categories">
+                <div class="cat-intro">
+                    <h2>Featured products</h2>
+                    <hr>
+                </div>
+                <div class="row-2">
+                    <div class="col-4">
+                        <img src="images/keyboard.png">
+                    </div>
+                    <div class="col-4">
+                        <img src="images/item7.jpeg">
+                    </div>
+                    <div class="col-4">
+                        <img src="images/item2.png">
+                    </div>
+                    <div class="col-4">
+                        <img src="images/computer-case.png">
+                    </div>
+                </div>
+            </div>    
+            
+            <div class="space-1"></div>
+        
+        <div class="latest_container">
+            <div class="inside_container">
+                <div class="latest_item">
+                   <img src="images/front-image-removebg.png" alt="laptop">
+                </div>
+                <div class="latest_text">
+                    <h2>Limited Edition</h2>
+                   <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ali</p>
+                   <button class="btn">Borrow Now</button>
+                </div>
+            </div>
+        </div>
+       
+        <div class="container_footer">
+            <footer class="main-footer">
+                
+                <div class="soc-med">
+                    <h4>Follow Us</h4>
+                    <p>Facebook</p>
+                    <p>Instagram</p>
+                    <p>Twitter</p>
+                </div>
+                <hr style="width:500px; margin:auto;">
+                    <div class="copyright">
+                        <p>&Copf;PRMSU</p>
+                    </div>
+            </footer>
+        </div>
+<script src="index.js"></script>
+</body>
+</html>
